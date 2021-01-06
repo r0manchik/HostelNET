@@ -153,6 +153,7 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
     text-decoration: none;
     transition: background .1s linear;
+    z-index: 100000;
 }
 
     .btn:hover {
@@ -191,6 +192,7 @@ h1, h2, h3, h4 {
     max-width: 1000px;
     margin: 0 auto 40px;
     text-align: center;
+    padding-top:250px;
 }
 /*contacts*/
 .header__inner_contacts {
@@ -326,7 +328,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250 px;
-    height 250 px;
+    width: 250px;
+    height: 250px;
     background: url(https://cdn.pixabay.com/photo/2012/04/14/14/34/dial-34139_960_720.png);
 }
