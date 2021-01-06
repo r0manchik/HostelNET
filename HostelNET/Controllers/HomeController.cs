@@ -26,10 +26,11 @@ namespace HostelNET.Controllers
         }
 
         [HttpPost]
-        public void Service(string name, string email, string option, string content)
+        public IActionResult Service(string name, string email, string option, string content)
         {
             var NoSQLcon = new Service_NoSQL() { Name = name, Email = email, Type = option, Description = content };
             NoSQLcon.Service_InsertInto();
+            return View();
         }
 
         [HttpGet]
@@ -39,7 +40,7 @@ namespace HostelNET.Controllers
         }
 
         [HttpPost]
-        public void Work(string name, string email, string option, string content)
+        public IActionResult Work(string name, string email, string option, string content)
         {
             if (!int.TryParse(option, out int type))
             {
@@ -47,6 +48,7 @@ namespace HostelNET.Controllers
             }
             var SQLcon = new Work_SQL() { Name = name, Email = email, Type = type, Description = content };
             SQLcon.Work_InsertInto();
+            return View();
         }
 
         public IActionResult Contacts()

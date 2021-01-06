@@ -16,29 +16,27 @@
         <h3>To be honest, It is not in our interests to make the nets of hostels around the world, much more interesting to make a new friends, so join us and become a part of the biggest friendship in the world </h3>
         <p1>*We can find clients for </p1><br>
         <p2>*We can make your service batter</p2><br>
-        <p3>*Relocate your hostel place if it is bad </p3><br>        
+        <p3>*Relocate your hostel place if it is bad </p3><br>
         <p3>*It will be fun </p3><br>
         <p4>*Join us </p4><br>
-
-        <input class="nav__link" type="text" name="name" placeholder="Your_name" required><br>
-        <input type="text" name="email" placeholder="Your e-mail " required><br>
-        <select name="option">
-            <option value="0">*choose a type of the house </option>
-            <option value="1">Hostel </option>
-            <option value="2">Hotel</option>
-            <option value="3">Private House </option>
-        </select><br>
-        <textarea name="content" cols="30" rows="10" required placeholder="Your wishes"></textarea>
-        <button class="btn" type="submit">Order</button>
-        <input class="btn" type="reset" value="Reset">
-
+        <form method="post">
+            <input class="nav__link" type="text" name="name" placeholder="Your name" required><br>
+            <input type="text" name="email" placeholder="Your e-mail " required><br>
+            <select name="option">
+                <option value="0">*choose a type of the house </option>
+                <option value="1">Hostel </option>
+                <option value="2">Hotel</option>
+                <option value="3">Private House </option>
+            </select><br>
+            <input name="content" placeholder="Your wishes" />
+            <input class="btn" type="submit" value="Order" />
+        </form>
         <div class="clock">
             <div class="hour">
                 <div class="hr" id="hr"></div>
             </div>
             <div class="min">
                 <div class="mn" id="mn"></div>
-
             </div>
             <div class="second">
                 <div class="sc" id="sc"></div>
