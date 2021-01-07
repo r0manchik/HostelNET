@@ -48,18 +48,20 @@ h1, h2, h3, h4 {
 }
 
 .intro__title {
-    font-size: 150px;
-    font-weight: 700;
+    font-size: 85px;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     line-height: 1;
-    word-spacing: 50px;
+    word-spacing: 40px;
+    padding-top: 25%;
 }
 
 .intro_tittle {
-    width: 100%;
-    max-width: 880px;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
+    
 }
 /*header*/
 .header {
@@ -192,7 +194,7 @@ h1, h2, h3, h4 {
     max-width: 1000px;
     margin: 0 auto 40px;
     text-align: center;
-    padding-top:250px;
+    border-top:90px;
 }
 /*contacts*/
 .header__inner_contacts {
@@ -224,8 +226,8 @@ h1, h2, h3, h4 {
 
 .footer {
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
+    border-top:20px;
+  
 }
 
 .img_contacts_main {
@@ -289,7 +291,7 @@ h1, h2, h3, h4 {
     content: "";
     display: block;
     border: 1px solid white;
-    width: 200px;
+    width: 20px;
     position: absolute;
 }
 
@@ -297,8 +299,9 @@ h1, h2, h3, h4 {
     content: "";
     display: block;
     border: 1px solid black;
-    width: 1000px;
+    width: 100%;
     position: relative;
+    align-content:center;
 }
 
 .text-2 {
@@ -330,5 +333,91 @@ h1, h2, h3, h4 {
     align-items: center;
     width: 250px;
     height: 250px;
-    background: url(https://cdn.pixabay.com/photo/2012/04/14/14/34/dial-34139_960_720.png);
+}
+
+.adaptive_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.another_fuckin_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_contacts_main {
+    flex: 0 0 auto;
+    min-width: 9%;
+    width: 100px;
+    height: 100px;
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-box {
+    flex: 0 0 auto;
+    min-width: 9%;
+    width: 160px;
+    height: 160px;
+}
+
+
+
+
+.label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+
+@media (max-widht:500px) {
+    .Header__logo {
+        display: none;
+    }
+
+    .another_fuckin_flex {
+        display: flex;
+    }
+
+    .Index {
+        flex-shrink: 2;
+    }
+
+    .label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header__inner {
+        text-align: center;
+        width: 100%;
+    }
+
+        .header__inner a {
+            display: block;
+            border-bottom: 1px solid black;
+            margin: 0;
+        }
+
+    #toggle:checked + .header__inner {
+        display: block;
+    }
+}
+
+@media (min-width: 1000px) {
+    .intro_tittle {
+        font-size: 1px;
+    }
 }
